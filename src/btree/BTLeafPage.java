@@ -42,14 +42,12 @@ public class BTLeafPage extends BTSortedPage {
 	public BTLeafPage(PageId pgid, int type) throws ConstructPageException {
 		super(type);
 	}
-
-	public RID insertKey(KeyClass key, PageId pageNo) {
-
-		return null;
-	}
-
-	public PageId getPageNoByKey(KeyClass key) {
-
+	
+	
+	
+	public RID insertRecord(KeyClass key,
+            RID dataRid){
+		
 		return null;
 	}
 

@@ -27,7 +27,7 @@ class BTDriver  implements GlobalConst
   protected String logpath;
   public int deleteFashion;
   
-  public void runTests () {
+  public void runTests () throws IteratorException {
     Random random = new Random();
     dbpath = "BTREE" + random.nextInt() + ".minibase-db"; 
     logpath = "BTREE" + random.nextInt() + ".minibase-log"; 
@@ -129,7 +129,7 @@ class BTDriver  implements GlobalConst
  } 
   
   
-  protected void runAllTests (){
+  protected void runAllTests () throws IteratorException{
     PageId pageno=new PageId();
     int  key, n,m, num, choice, lowkeyInt, hikeyInt;    
     KeyClass lowkey, hikey;
